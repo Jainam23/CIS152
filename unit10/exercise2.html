@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Table Exercises</title>
+<style>
+  body  { font-family: Arial, sans-serif; margin: 2rem; }
+  h2    { margin-top: 3rem; }
+
+  .stripe tr:nth-child(even) { background:#CCCCCC; }
+
+  .bordered, .bordered th, .bordered td {
+    border: 2px solid #444;
+    border-collapse: collapse;
+  }
+  .bordered th, .bordered td { padding: .4em .6em; }
+</style>
+</head>
+<body>
+
+<h2>1. Birthday List</h2>
+<table>
+  <tr><th colspan="2">Birthday List</th></tr>
+  <tr><td>Brian Spina</td><td>Aug 13</td></tr>
+  <tr><td>Patrick Shartzer</td><td>Aug 3</td></tr>
+</table>
+
+<h2>2. Current Courses</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Course Number</th>
+      <th>Course Name</th>
+      <th>Instructor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CIS&nbsp;152</td>
+      <td>Web Design and Development I</td>
+      <td>James Munger</td>
+    </tr>
+    <tr>
+      <td>CSC&nbsp;105</td>
+      <td>App of Computers in Business &amp; Commerce</td>
+      <td>Leann McPike</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>3. Favourite Movies (striped)</h2>
+<table class="stripe">
+  <tr>
+    <td>A Silent Voice</td>
+    <td>An anime about redemption, bullying, and the power of empathy.</td>
+  </tr>
+
+</table>
+
+<h2>4. Favourite Movies (bordered)</h2>
+<table class="bordered">
+  <tr><td>A Silent Voice</td><td>An anime about redemption, bullying, and the power of empathy.</td></tr>
+  <tr>
+</table>
+
+</body>
+</html>
