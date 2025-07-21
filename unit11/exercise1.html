@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Form Demo</title>
+</head>
+<body>
+
+<form action="process.php" method="post">
+
+  <p>
+    <label for="user">User&nbsp;Name:</label>
+    <input type="text" id="user" name="user" maxlength="30">
+  </p>
+
+  <fieldset>
+    <legend>Favorite Month</legend>
+    <label><input type="radio" name="favMonth" value="Jan"> January</label><br>
+    <label><input type="radio" name="favMonth" value="Feb"> February</label><br>
+    <label><input type="radio" name="favMonth" value="Mar"> March</label><br>
+    <label><input type="radio" name="favMonth" value="Apr"> April</label><br>
+    <label><input type="radio" name="favMonth" value="May"> May</label><br>
+    <label><input type="radio" name="favMonth" value="Jun"> June</label><br>
+    <label><input type="radio" name="favMonth" value="Jul"> July</label><br>
+    <label><input type="radio" name="favMonth" value="Aug"> August</label><br>
+    <label><input type="radio" name="favMonth" value="Sep"> September</label><br>
+    <label><input type="radio" name="favMonth" value="Oct"> October</label><br>
+    <label><input type="radio" name="favMonth" value="Nov"> November</label><br>
+    <label><input type="radio" name="favMonth" value="Dec"> December</label>
+  </fieldset>
+
+  <p>
+    <label for="social">Favorite Social Network:</label>
+    <select id="social" name="social">
+      <option value="facebook">Facebook</option>
+      <option value="instagram">Instagram</option>
+      <option value="twitter">Twitter/X</option>
+      <option value="tiktok">TikTok</option>
+      <option value="reddit">Reddit</option>
+    </select>
+  </p>
+
+  <fieldset>
+    <legend>Shipping Address</legend>
+
+    <p>
+      <label for="addr1">Address Line 1:</label>
+      <input type="text" id="addr1" name="AddressLine1">
+    </p>
+
+    <p>
+      <label for="addr2">Address Line 2:</label>
+      <input type="text" id="addr2" name="AddressLine2">
+    </p>
+
+    <p>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="City">
+    </p>
+
+    <p>
+      <label for="state">State:</label>
+      <input type="text" id="state" name="State" size="3" maxlength="2">
+    </p>
+
+    <p>
+      <label for="zip">ZIP:</label>
+      <input type="text" id="zip" name="ZIP" size="10" maxlength="10">
+    </p>
+  </fieldset>
+
+  <p>
+    <input type="image" src="signup.gif" alt="Sign Up">
+  </p>
+
+  <input type="hidden" name="userid" value="12345">
+
+  <p>
+    <label for="pword">Password:</label>
+    <input type="password" id="pword" name="pword">
+  </p>
+
+</form>
+
+</body>
+</html>
